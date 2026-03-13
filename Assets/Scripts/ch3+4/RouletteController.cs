@@ -9,6 +9,7 @@ public class RouletteController : MonoBehaviour
     float rotangle;
     public TextMeshProUGUI show;
     public TextMeshProUGUI record;
+    public ParticleSystem p;
     private void Start()
     {
         rotangle = transform.eulerAngles.z;
@@ -25,7 +26,11 @@ public class RouletteController : MonoBehaviour
             rotSpeed = 0;
         if (rotSpeed == 0)
         {
-            if (rotangle >= -30 && rotangle <= 30) show.text="¥û";
+            if (rotangle >= -30 && rotangle <= 30)
+            {
+                show.text = "¥û";
+                p.Play();
+            }
             
         }
 
