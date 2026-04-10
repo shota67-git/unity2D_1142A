@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour
 {
@@ -16,5 +17,9 @@ public class CameraController : MonoBehaviour
     {
         Vector3 catPos = cat.transform.position;
         transform.position = new Vector3(catPos.x,catPos.y,transform.position.z);
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("NinjaCat");
+        }
     }
 }

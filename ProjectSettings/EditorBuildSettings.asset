@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ch6End.unity
     guid: ea3ed523cad9ea44ba31e26b575e4e90
+  - enabled: 1
+    path: Assets/Scenes/ch5.unity
+    guid: 6c2b16dcebd82544298997a53a91a502
+  - enabled: 1
+    path: Assets/Scenes/NinjaCat.unity
+    guid: fc079defd295c4a4893223ad763d614a
   m_configObjects: {}
