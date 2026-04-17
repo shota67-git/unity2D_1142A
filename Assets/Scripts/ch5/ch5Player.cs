@@ -18,7 +18,7 @@ public class ch5Player : MonoBehaviour
             if (transform.position.x < 8)
                 transform.Translate(0.05f, 0, 0);
         }
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             if (transform.position.x > -7.5f)
                 transform.Translate(-1, 0, 0);
